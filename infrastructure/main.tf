@@ -71,7 +71,7 @@ resource "aws_internet_gateway" "ig_2tier" {
   }
 }
 
-# Public route table    #### What the heck?####
+# Public route table
 resource "aws_route_table" "public_route_table" {
   vpc_id = aws_vpc.my_vpc.id
   tags = {
@@ -90,7 +90,7 @@ resource "aws_route" "public_route" {
   gateway_id             = aws_internet_gateway.ig_2tier.id
 }
 
-# Private route table       #### What the heck?####
+# Private route table
 resource "aws_route_table" "private_route_table" {
   vpc_id = aws_vpc.my_vpc.id
   tags = {
