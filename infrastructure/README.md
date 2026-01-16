@@ -68,6 +68,10 @@ This diagram illustrates the basic structure of the system:
 - the application runs on a server
 - data is stored in a separate database
 
+The diagram also includes **Object Storage (S3)**, which is used by the application server to store files and assets.
+S3 is not publicly accessible and can only be accessed by the application itself.
+
+
 No direct access to the database from the internet is possible.
 
 ---
