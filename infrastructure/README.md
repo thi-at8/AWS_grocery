@@ -70,3 +70,16 @@ This diagram illustrates the basic structure of the system:
 
 No direct access to the database from the internet is possible.
 
+---
+
+## Object Storage (S3)
+
+The infrastructure includes an **S3 bucket** for storing project-related files such as uploads, assets, or generated data.
+
+The bucket is configured with:
+- no public access
+- server-side encryption
+- access restricted to authorized services only
+
+This ensures secure and controlled storage without exposing data to the public internet.
+
