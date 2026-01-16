@@ -57,3 +57,16 @@ Using Infrastructure-as-Code ensures:
 
 This approach is commonly used in professional, public-sector, and funded projects.
 
+---
+
+## Simple Architecture Overview
+
+![Simple architecture overview](architecture.png)
+
+This diagram illustrates the basic structure of the system:
+- users access the application via the internet
+- the application runs on a server
+- data is stored in a separate database
+
+No direct access to the database from the internet is possible.
+
